@@ -1,7 +1,34 @@
 #include<iostream>
 
+
 using namespace std;
 
+ int adiff(int A, int B)
+ {
+   int C;
+  
+   if(A > B)
+   {
+     C = A - B;
+   }
+   else
+   {
+     C = B - A;
+   }
+   while (C > 180)
+   {
+     C = C - 360;
+   }
+   if(C < 0)
+   {
+     C = -C;
+   }
+   
+
+
+
+   return C;
+ }
 
 int main(){
   cout << adiff(180,270);
